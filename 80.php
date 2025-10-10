@@ -6,80 +6,66 @@ function feedback404()
     echo "<h1><strong>Apa Yang Kau Carik Disini!!</strong></h1>";
     echo "<!-- This is " . (isset($BRANDS) ? $BRANDS : 'undefined') . ". -->";
 }
-
-// Jika parameter 'daftar' tidak ada, set default-nya ke 'jpterus66'
-if (!isset($_GET['daftar']) || empty(trim($_GET['daftar']))) {
-    $_GET['daftar'] = 'jpterus66';
-}
-
-// Proses parameter daftar
-$filename = "kw.txt";
-if (!file_exists($filename)) {
-    feedback404();
-    exit();
-}
-
-$lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-$totalKeywords = count($lines);
-
-// Normalisasi input
-$input = strtolower($_GET['daftar']);
-$input = str_replace(' ', '-', $input);
-
-// Cari index keyword yang sedang diakses
-$currentIndex = -1;
-foreach ($lines as $index => $item) {
-    $normalizedItem = strtolower(str_replace(' ', '-', $item));
-    if ($normalizedItem === $input) {
-        $currentIndex = $index;
-        $BRAND = $item;
-        break;
+// Cek parameter daftar
+if (isset($_GET['daftar'])) {
+    $filename = "kw.txt";
+        $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        $totalKeywords = count($lines);
+    // Normalisasi input: ganti spasi dengan tanda hubung dan lowercase
+    $input = strtolower($_GET['daftar']);
+    $input = str_replace(' ', '-', $input);
+    // Cari index keyword yang sedang diakses
+    $currentIndex = -1;
+    foreach ($lines as $index => $item) {
+        // Normalisasi keyword dari file
+        $normalizedItem = strtolower(str_replace(' ', '-', $item));
+        if ($normalizedItem === $input) {
+            $currentIndex = $index;
+            $BRAND = $item; // Simpan nilai asli dari file
+            break;
+        }
     }
-}
-
-if ($currentIndex >= 0) {
-    // Normalisasi tampilan
-    $BRANDS = str_replace('-', ' ', $BRAND);
-    $BRANDS = ucwords(strtolower($BRANDS));
-    $BRANDS1 = strtolower(str_replace(' ', '-', $BRANDS));
-
-    // Generate number konsisten
-    $Number = (crc32($BRAND) % 16) + 1;
-
-    // Ambil 5 keyword berikutnya (wrap around)
-    $nextKeywords = [];
-    for ($i = 1; $i <= 5; $i++) {
-        $nextIndex = ($currentIndex + $i) % $totalKeywords;
-        $nextKeywords[] = $lines[$nextIndex];
+    if ($currentIndex >= 0) {
+        // Mengganti tanda hubung (-) dengan spasi ( ) untuk tampilan
+        $BRANDS = str_replace('-', ' ', $BRAND);
+        $BRANDS = ucwords(strtolower($BRANDS)); // Kapitalisasi setiap kata
+        // Buat versi URL-nya
+        $BRANDS1 = strtolower(str_replace(' ', '-', $BRANDS));
+        // Generate number konsisten
+        $Number = (crc32($BRAND) % 16) + 1;
+        // Ambil 5 keyword berikutnya (wrap around)
+        $nextKeywords = array();
+        for ($i = 1; $i <= 5; $i++) {
+            $nextIndex = ($currentIndex + $i) % $totalKeywords;
+            $nextKeywords[] = $lines[$nextIndex];
+        }
+        // Assign ke variabel individual
+        $randomKeyword = $nextKeywords[0];
+        $randomKeyword2 = $nextKeywords[1];
+        $randomKeyword3 = $nextKeywords[2];
+        $randomKeyword4 = $nextKeywords[3];
+        $randomKeyword5 = $nextKeywords[4];
+        // Buat URL versi tanda hubung
+        $randomUrl = strtolower(str_replace(' ', '-', $randomKeyword));
+        $randomUrl2 = strtolower(str_replace(' ', '-', $randomKeyword2));
+        $randomUrl3 = strtolower(str_replace(' ', '-', $randomKeyword3));
+        $randomUrl4 = strtolower(str_replace(' ', '-', $randomKeyword4));
+        $randomUrl5 = strtolower(str_replace(' ', '-', $randomKeyword5));
+        // Ambil URL lengkap
+        $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+        $fullUrl = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        $parsedUrl = parse_url($fullUrl);
+        $scheme = isset($parsedUrl['scheme']) ? $parsedUrl['scheme'] : '';
+        $host = isset($parsedUrl['host']) ? $parsedUrl['host'] : '';
+        $path = isset($parsedUrl['path']) ? $parsedUrl['path'] : '';
+        $query = isset($parsedUrl['query']) ? $parsedUrl['query'] : '';
+        $baseUrl = $scheme . "://" . $host . $path . '?' . $query;
+        $urlPath = $baseUrl;
+        // Di sini bisa lanjut render atau proses lainnya...
+    } else {
+        feedback404();
+        exit();
     }
-
-    // Assign ke variabel individual
-    $randomKeyword  = $nextKeywords[0];
-    $randomKeyword2 = $nextKeywords[1];
-    $randomKeyword3 = $nextKeywords[2];
-    $randomKeyword4 = $nextKeywords[3];
-    $randomKeyword5 = $nextKeywords[4];
-
-    // Buat versi URL-nya
-    $randomUrl  = strtolower(str_replace(' ', '-', $randomKeyword));
-    $randomUrl2 = strtolower(str_replace(' ', '-', $randomKeyword2));
-    $randomUrl3 = strtolower(str_replace(' ', '-', $randomKeyword3));
-    $randomUrl4 = strtolower(str_replace(' ', '-', $randomKeyword4));
-    $randomUrl5 = strtolower(str_replace(' ', '-', $randomKeyword5));
-
-    // Ambil URL lengkap
-    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
-    $fullUrl = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-    $parsedUrl = parse_url($fullUrl);
-
-    $scheme = isset($parsedUrl['scheme']) ? $parsedUrl['scheme'] : '';
-    $host   = isset($parsedUrl['host']) ? $parsedUrl['host'] : '';
-    $path   = isset($parsedUrl['path']) ? $parsedUrl['path'] : '';
-    $query  = isset($parsedUrl['query']) ? $parsedUrl['query'] : '';
-    $baseUrl = $scheme . "://" . $host . $path . ($query ? '?' . $query : '');
-    $urlPath = $baseUrl;
-
-    // Di sini kamu bisa lanjut render konten sesuai kebutuhan...
 } else {
     feedback404();
     exit();
