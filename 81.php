@@ -7,8 +7,8 @@ function feedback404()
     echo "<!-- This is " . ($BRANDS ?? 'undefined') . ". -->";
 }
 
-// Cek parameter q
-if (isset($_GET['q'])) {
+// Cek parameter daftar
+if (isset($_GET['daftar'])) {
     $filename = "kw.txt";
     if (!file_exists($filename)) {
         die("File kw.txt tidak ditemukan.");
