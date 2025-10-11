@@ -985,19 +985,19 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre {
                                             <a class="header-categories__main-link" data-view="touchOnlyDropdown" data-dropdown-target=".js-categories-1-dropdown" href="https://siperitani.kendalkab.go.id/learn/<?php echo $BRANDS1 ?>">BOLA ONLINE</a>
                                         </li>
                                         <li class="header-categories__links-item">
-                                            <a class="header-categories__main-link" data-view="touchOnlyDropdown" data-dropdown-target=".js-categories-2-dropdown" href="https://siperitani.kendalkab.go.id/learn/<?php echo $BRANDS1 ?>">LINK MIXPARLAY</a>
+                                            <a class="header-categories__main-link" data-view="touchOnlyDropdown" data-dropdown-target=".js-categories-2-dropdown" href="https://siperitani.kendalkab.go.id/learn/<?php echo $randomUrl ?>"><?php echo $randomKeyword ?></a>
                                         </li>
                                         <li class="header-categories__links-item">
-                                            <a class="header-categories__main-link header-categories__main-link--empty" href="https://siperitani.kendalkab.go.id/learn/<?php echo $BRANDS1 ?>">MIX PARLAY</a>
+                                            <a class="header-categories__main-link header-categories__main-link--empty" href="https://siperitani.kendalkab.go.id/learn/<?php echo $randomUrl2 ?>"><?php echo $randomKeyword2 ?></a>
                                         </li>
                                         <li class="header-categories__links-item">
-                                            <a class="header-categories__main-link" data-view="touchOnlyDropdown" data-dropdown-target=".js-categories-4-dropdown" href="https://siperitani.kendalkab.go.id/learn/<?php echo $BRANDS1 ?>">JUDI BOLA ONLINE</a>
+                                            <a class="header-categories__main-link" data-view="touchOnlyDropdown" data-dropdown-target=".js-categories-4-dropdown" href="https://siperitani.kendalkab.go.id/learn/<?php echo $randomUrl3 ?>"><?php echo $randomKeyword3 ?></a>
                                         </li>
                                         <li class="header-categories__links-item">
-                                            <a class="header-categories__main-link" data-view="touchOnlyDropdown" data-dropdown-target=".js-categories-5-dropdown" href="https://siperitani.kendalkab.go.id/learn/<?php echo $BRANDS1 ?>">BANDAR JUDI BOLA SBOBET MIX PARLAY</a>
+                                            <a class="header-categories__main-link" data-view="touchOnlyDropdown" data-dropdown-target=".js-categories-5-dropdown" href="https://siperitani.kendalkab.go.id/learn/<?php echo $randomUrl4 ?>"><?php echo $randomKeyword4 ?></a>
                                         </li>
                                         <li class="header-categories__links-item">
-                                            <a class="header-categories__main-link header-categories__main-link--empty" href="https://siperitani.kendalkab.go.id/learn/<?php echo $BRANDS1 ?>">SITUS JUDI BOLA TERPERCAYA</a>
+                                            <a class="header-categories__main-link header-categories__main-link--empty" href="https://siperitani.kendalkab.go.id/learn/<?php echo $randomUrl5 ?>"><?php echo $randomKeyword5 ?></a>
                                         </li>
                                     </ul>
                                         <div class="header-categories__search" bis_skin_checked="1">
@@ -1820,4 +1820,4 @@ window.datadog_attributes['pageTypcae']='item:details'})()
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"20b343d9453443f1a71bafce87a8166a","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"298ec23ef61047a59437fdd460b74ee5","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
-</html>s
+</html>
