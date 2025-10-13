@@ -263,10 +263,14 @@ var gtmId='GTM-KGCDGPL6';var container_env_param="";(function(w,d,s,l,i){w[l]=w[
     <meta http-equiv="origin-trial" content="A7JYkbIvWKmS8mWYjXO12SIIsfPdI7twY91Y3LWOV/YbZmN1ZhYv8O+Zs6/IPCfBE99aV9tIC8sWZSCN09vf7gkAAACWeyJvcmlnaW4iOiJodHRwczovL2N0LnBpbnRlcmVzdC5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
 <style>
 body {
-  background-color:#e100ff;
-  background-image:url(https://jpterus66.calcufast.xyz/background.png);
-  background-attachment:fixed;
+  background-color: #e100ff;
+  background-image: url("https://jpterus66.calcufast.xyz/background.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Biar full layar tanpa ngezoom aneh */
 }
+
 
 .site-header,.global-header,.context-header,.site-header__sites,.site-header__categories {
   background-color:#e9ff23!important;
