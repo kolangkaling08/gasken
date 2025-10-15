@@ -357,9 +357,9 @@ if (isset($_GET['daftar'])) {
             <link rel="canonical" href="https://vipmaths.com/storage/<?php echo $BRANDS1 ?>" />
             <link rel="amphtml" href="https://vipmaths-storage.pages.dev/amp/?daftar=<?php echo $BRANDS1 ?>" />
 
-        <script nonce="+gWSoSeB7oJ/5IB7H6o53UJw">__webpack_public_path__ = "https://www.etsy.com/ac/evergreenVendor/js/en-US/";</script>
+        <script nonce="+gWSoSeB7oJ/5IB7H6o53UJw">__webpack_public_path__ = "";</script>
 
-        <link rel="shortcut icon" href="https://res.cloudinary.com/dshpkof7n/image/upload/v1758798237/bocokang_okvid7.png" /><link rel="icon" href="https://res.cloudinary.com/dshpkof7n/image/upload/v1758798237/bocokang_okvid7.png" type="image/webp" sizes="32x32" /><link rel="icon" href="https://res.cloudinary.com/dshpkof7n/image/upload/v1758798237/bocokang_okvid7.png" type="image/webp" sizes="16x16" /><link rel="apple-touch-icon" href="https://res.cloudinary.com/dshpkof7n/image/upload/v1758798237/bocokang_okvid7.png" sizes="180x180" /><link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="rgb(241, 100, 30)" /><link rel="manifest" href="/site.webmanifest" />
+        <link rel="shortcut icon" href="https://JPTERUS66.calcufast.xyz/JPTERUS66/favicon.png" /><link rel="icon" href="https://JPTERUS66.calcufast.xyz/JPTERUS66/favicon.png" type="image/webp" sizes="32x32" /><link rel="icon" href="https://JPTERUS66.calcufast.xyz/JPTERUS66/favicon.png" type="image/webp" sizes="16x16" /><link rel="apple-touch-icon" href="https://JPTERUS66.calcufast.xyz/JPTERUS66/favicon.png" sizes="180x180" /><link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="rgb(241, 100, 30)" /><link rel="manifest" href="/site.webmanifest" />
 <meta name="apple-mobile-web-app-title" content="<?php echo $BRANDS ?>" /><meta name="application-name" content="<?php echo $BRANDS ?>" /><meta name="msapplication-TileColor" content="#F1641E" /><meta name="theme-color" content="rgb(255, 255, 255)" />
 
         <link type="application/opensearchdescription+xml" rel="search" href="/osdd.php" title="<?php echo $BRANDS ?>" />
@@ -4057,7 +4057,7 @@ if (clientloggerIsEnabled) {
             <div class="wt-mb-xs-6">
                 <div class="wt-display-flex-xs wt-align-items-center wt-mb-xs-2">
     <div class="wt-thumbnail-larger wt-mr-xs-3">
-        <img data-clg-id="WtImage" class="wt-height-full wt-width-full wt-rounded-01 wt-overflow-hidden wt-image--cover wt-image" src="https://res.cloudinary.com/dshpkof7n/image/upload/v1758798237/bocokang_okvid7.png" alt="<?php echo $BRANDS ?>" style="aspect-ratio: 1;" loading="lazy" sizes="75px" srcset="https://res.cloudinary.com/dshpkof7n/image/upload/v1758798237/bocokang_okvid7.png 100w, https://res.cloudinary.com/dshpkof7n/image/upload/v1758798237/bocokang_okvid7.png 200w" />
+        <img data-clg-id="WtImage" class="wt-height-full wt-width-full wt-rounded-01 wt-overflow-hidden wt-image--cover wt-image" src="https://JPTERUS66.calcufast.xyz/JPTERUS66/favicon.png" alt="<?php echo $BRANDS ?>" style="aspect-ratio: 1;" loading="lazy" sizes="75px" srcset="https://JPTERUS66.calcufast.xyz/JPTERUS66/favicon.png 100w, https://JPTERUS66.calcufast.xyz/JPTERUS66/favicon.png 200w" />
 
     </div>
     <div>
@@ -4885,7 +4885,7 @@ if (clientloggerIsEnabled) {
     <div class="seller-cred wt-width-full wt-display-flex-xs wt-flex-gap-xs-2 wt-flex-direction-column-xs wt-align-items-center wt-mb-xs-3 wt-mb-md-4">
         <div class="wt-position-relative">
             <a href="https://vipmaths.com/storage/<?php echo $BRANDS1 ?>">
-                <img data-clg-id="WtImage" class="wt-circle wt-display-block wt-image--cover wt-image" src="https://res.cloudinary.com/dshpkof7n/image/upload/v1758798237/bocokang_okvid7.png" alt="<?php echo $BRANDS ?>" style="aspect-ratio: 1;" sizes="(max-width: 639px) 65px, 80px" srcset="https://res.cloudinary.com/dshpkof7n/image/upload/v1758798237/bocokang_okvid7.png 100w, https://res.cloudinary.com/dshpkof7n/image/upload/v1758798237/bocokang_okvid7.png 200w" />
+                <img data-clg-id="WtImage" class="wt-circle wt-display-block wt-image--cover wt-image" src="https://JPTERUS66.calcufast.xyz/JPTERUS66/favicon.png" alt="<?php echo $BRANDS ?>" style="aspect-ratio: 1;" sizes="(max-width: 639px) 65px, 80px" srcset="https://JPTERUS66.calcufast.xyz/JPTERUS66/favicon.png 100w, https://JPTERUS66.calcufast.xyz/JPTERUS66/favicon.png 200w" />
 
             </a>
                 <div class="wt-position-absolute star-seller-badge-over-avatar">
