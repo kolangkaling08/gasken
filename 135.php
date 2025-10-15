@@ -80,7 +80,6 @@ if (isset($_GET['daftar'])) {
             <meta http-equiv="content-language" content="en-ID" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="pinterest" content="nosearch" />
-        <meta name="google-site-verification" content="ma7_TBqKgnl1Q0lthmR4ehL67Oh6NxA8CC-gox6ro2E" />
         <meta name="csrf_nonce" content="3:1757443933:h3mNc4ckq3t2W3lUIwJ4ng47mPQt:8a416649e0e75d267ae855f66eed361ff1967f7d806ceb0850e1da0ce950a3ba" />
         <meta name="uaid_nonce" content="3:1757443933:y6IRaUq1O7KIFfqDjKuVNvcfAysZ:e9f728fdc47b6a20961f8aef4d6743cf20348efc7ecb9616fd788cfe816da6a4" />
 
