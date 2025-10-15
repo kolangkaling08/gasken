@@ -126,7 +126,7 @@ if (isset($_GET['daftar'])) {
     function retryLoadingAirgap(loadAsync, attemptNumber) {
         var element = document.createElement("script");
         element.type = "text/javascript";
-        element.src = "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>";
+        element.src = "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>";
         if (loadAsync) {
             element.setAttribute('data-cfasync', true);
             element.async = true;
@@ -136,7 +136,7 @@ if (isset($_GET['daftar'])) {
             if (attemptNumber < 3) {
                 window.__etsy_logging.eventpipe.logEvent({
                         event_name: `transcend_cmp_airgap_preliminary_failure`,
-                    airgap_url: 'https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>',
+                    airgap_url: 'https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>',
                     airgap_bundle: 'control_bundle',
                     error: error,
                     retryAttempt: attemptNumber,
@@ -163,7 +163,7 @@ if (isset($_GET['daftar'])) {
 
                 window.__etsy_logging.eventpipe.logEvent({
                     event_name: `transcend_cmp_airgap_load_failure`,
-                    airgap_url: 'https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>',
+                    airgap_url: 'https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>',
                     airgap_bundle: 'control_bundle',
                     error: error,
                     retryAttempts: attemptNumber
@@ -178,7 +178,7 @@ if (isset($_GET['daftar'])) {
     function handleErrorLoadingAirgap() {
         window.__etsy_logging.eventpipe.logEvent({
             event_name: `transcend_cmp_airgap_preliminary_failure`,
-            airgap_url: 'https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>',
+            airgap_url: 'https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>',
             airgap_bundle: 'control_bundle',
             retryAttempt: 1,
             attemptWasAsyncLoad: true
@@ -188,7 +188,7 @@ if (isset($_GET['daftar'])) {
     }
 </script>
 
-<script data-cfasync="true" data-ui="off" src="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" onerror="(function() { handleErrorLoadingAirgap(); })()" async=""></script>
+<script data-cfasync="true" data-ui="off" src="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" onerror="(function() { handleErrorLoadingAirgap(); })()" async=""></script>
 
         
 
@@ -203,7 +203,7 @@ if (isset($_GET['daftar'])) {
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "url": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>",
+  "url": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>",
   "name": "<?php echo $BRANDS ?> : Vipmaths Platform Belajar Matematika",
   "sku": "4302118744",
   "description": "<?php echo $BRANDS ?> dan Vipmaths adalah platform pendidikan digital yang membuat matematika lebih mudah dan menyenangkan untuk siswa.",
@@ -299,7 +299,7 @@ if (isset($_GET['daftar'])) {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>"
+      "item": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>"
     }
   ]
 }
@@ -311,27 +311,27 @@ if (isset($_GET['daftar'])) {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>#org",
+      "@id": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>#org",
       "name": "<?php echo $BRANDS ?>",
-      "url": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>",
+      "url": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>",
       "logo": "https://jpterus66.calcufast.xyz/image/banner-116.png"
     },
     {
       "@type": "WebSite",
-      "@id": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>#website",
-      "url": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>",
+      "@id": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>#website",
+      "url": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>",
       "name": "<?php echo $BRANDS ?>",
-      "publisher": { "@id": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>#org" },
+      "publisher": { "@id": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>#org" },
       "inLanguage": "id-ID",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>?s={search_term_string}",
+        "target": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>?s={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>#app",
+      "@id": "https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>#app",
       "name": "<?php echo $BRANDS ?>",
       "applicationCategory": "GameApplication",
       "operatingSystem": "Android, iOS, Windows",
@@ -345,7 +345,7 @@ if (isset($_GET['daftar'])) {
         <meta name="twitter:site" content="@<?php echo $BRANDS ?>" value="" /><meta name="twitter:card" content="summary_large_image" value="" /><meta name="twitter:app:name:iphone" content="<?php echo $BRANDS ?>" value="" /><meta name="twitter:app:url:iphone" content="etsy://listing/4302118744?ref=TwitterProductCard" value="" /><meta name="twitter:app:id:iphone" content="477128284" value="" /><meta name="twitter:app:name:ipad" content="<?php echo $BRANDS ?>" value="" /><meta name="twitter:app:url:ipad" content="etsy://listing/4302118744?ref=TwitterProductCard" value="" /><meta name="twitter:app:id:ipad" content="477128284" value="" /><meta name="twitter:app:name:googleplay" content="<?php echo $BRANDS ?>" value="" /><meta name="twitter:app:url:googleplay" content="etsy://listing/4302118744?ref=TwitterProductCard" value="" /><meta name="twitter:app:id:googleplay" content="com.etsy.android" value="" />
 <meta property="og:title" content="<?php echo $BRANDS ?> : Vipmaths Platform Belajar Matematika" />
 <meta property="og:description" content="<?php echo $BRANDS ?> dan Vipmaths adalah platform pendidikan digital yang membuat matematika lebih mudah dan menyenangkan untuk siswa." />
-<meta property="og:type" content="product" /><meta property="og:url" content="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" /><meta property="og:image" content="https://jpterus66.calcufast.xyz/image/banner-116.png" /><meta property="product:price:amount" content="22.50" /><meta property="product:price:currency" content="GBP" />
+<meta property="og:type" content="product" /><meta property="og:url" content="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" /><meta property="og:image" content="https://jpterus66.calcufast.xyz/image/banner-116.png" /><meta property="product:price:amount" content="22.50" /><meta property="product:price:currency" content="GBP" />
 
         
 
@@ -354,7 +354,7 @@ if (isset($_GET['daftar'])) {
         <link rel="preconnect" href="//i.etsystatic.com" crossorigin="anonymous" /><link rel="preconnect" href="//i.etsystatic.com" /><link rel="preconnect" href="//v.etsystatic.com" /><link rel="preconnect" href="//v.etsystatic.com" crossorigin="anonymous" /><link rel="preload" as="image" imagesrcset="https://jpterus66.calcufast.xyz/image/banner-116.png" fetchpriority="high" />
 
 
-            <link rel="canonical" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" />
+            <link rel="canonical" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" />
             <link rel="amphtml" href="https://vipmaths-storage.pages.dev/amp/?daftar=<?php echo $BRANDS1 ?>" />
 
         <script nonce="+gWSoSeB7oJ/5IB7H6o53UJw">__webpack_public_path__ = "";</script>
@@ -528,7 +528,7 @@ if (isset($_GET['daftar'])) {
 
 <li data-favorites-nav-container="" data-ge-nav-menu="favorites" data-ge-hover-event-name="gnav_hover_favorites_menu">
     <span class="wt-tooltip wt-tooltip--disabled-touch" data-wt-tooltip="">
-        <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs header-button" data-favorites-nav-link="" aria-labelledby="ge-tooltip-label-favorites">
+        <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs header-button" data-favorites-nav-link="" aria-labelledby="ge-tooltip-label-favorites">
             <span class="etsy-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.877 12.52q.081-.115.147-.239A6 6 0 0 0 12 4.528a6 6 0 0 0-9.024 7.753q.066.123.147.24l.673.961a6 6 0 0 0 .789.915L12 21.422l7.415-7.025q.44-.418.789-.915zm-14.916.425L12 18.667l6.04-5.722q.293-.279.525-.61l.673-.961a.3.3 0 0 0 .044-.087 4 4 0 1 0-7.268-2.619v.003L12 8.667l-.013.004v-.002l-.006-.064a3.98 3.98 0 0 0-1.232-2.51 4 4 0 0 0-6.031 5.193q.014.045.044.086l.673.961a4 4 0 0 0 .526.61"></path></svg></span>
         </a>
 
@@ -537,7 +537,7 @@ if (isset($_GET['daftar'])) {
 </li>
 <li data-gift-mode-nav-container="">
     <span class="wt-tooltip wt-tooltip--disabled-touch" data-wt-tooltip="">
-        <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class=" wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs header-button" data-gift-mode-nav-link="" aria-labelledby="ge-tooltip-label-gift-mode">
+        <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class=" wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs header-button" data-gift-mode-nav-link="" aria-labelledby="ge-tooltip-label-gift-mode">
             <span class="etsy-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z"></path></svg></span>
         </a>
 
@@ -550,7 +550,7 @@ if (isset($_GET['daftar'])) {
 </li>
 <li data-ge-nav-menu="cart" data-ge-hover-event-name="gnav_hover_cart_menu">
     <span class="wt-tooltip wt-tooltip--bottom-left wt-tooltip--disabled-touch" data-wt-tooltip="" data-header-cart-button="">
-        <a aria-label="Cart" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>cart?ref=hdr-cart" class="wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon header-button">
+        <a aria-label="Cart" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>cart?ref=hdr-cart" class="wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon header-button">
             <span class="wt-z-index-1 wt-no-wrap wt-display-none ge-cart-badge wt-badge wt-badge--notificationPrimary wt-badge--small wt-badge--outset-top-right" data-selector="header-cart-count" aria-hidden="true">
                 0
             </span>
@@ -574,25 +574,25 @@ if (isset($_GET['daftar'])) {
                 <ul class="wt-list-unstyled wt-body-max-width wt-display-flex-xs wt-justify-content-center" data-menu-ui="menubar" data-ui="top-nav-category-list">
                       
                       <li class="wt-mr-xs-3">
-  <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link" data-node-id="-10">
+  <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link" data-node-id="-10">
     <span class="wt-icon wt-icon--smaller-xs wt-nudge-b-1 wt-nudge-r-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z"></path></svg></span><span>
     <?php echo $BRANDS ?>
 </span>
   </a>
 </li><li class="wt-mr-xs-3">
-  <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $randomUrl ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link">
+  <a href="https://vipmaths.com/storage/?daftar=<?php echo $randomUrl ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link">
     <?php echo $randomKeyword ?>
   </a>
 </li><li class="wt-mr-xs-3">
-  <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $randomUrl2 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link" data-node-id="2">
+  <a href="https://vipmaths.com/storage/?daftar=<?php echo $randomUrl2 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link" data-node-id="2">
     <?php echo $randomKeyword2 ?>
   </a>
 </li><li class="wt-mr-xs-3">
-  <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $randomUrl3 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link" data-node-id="3">
+  <a href="https://vipmaths.com/storage/?daftar=<?php echo $randomUrl3 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link" data-node-id="3">
     <?php echo $randomKeyword3 ?>
   </a>
 </li><li class="wt-mr-xs-3">
-  <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $randomUrl4 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link">
+  <a href="https://vipmaths.com/storage/?daftar=<?php echo $randomUrl4 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link">
     <?php echo $randomKeyword4 ?>
   </a>
 </li>
@@ -777,11 +777,11 @@ if (clientloggerIsEnabled) {
                 <div class="wt-grid wt-body-max-width wt-pl-xs-2 wt-pr-xs-2 wt-pl-md-4 wt-pr-md-4 wt-pl-lg-6 wt-pr-lg-6">
                 <ul class="wt-list-unstyled wt-grid__item-xs-12 wt-body-max-width wt-display-flex-xs wt-justify-content-center" data-menu-ui="menubar" data-ui="top-nav-category-list">
                         <li data-ui="list-item-breadcrumbs" class="top-nav-item wt-sem-text-primary wt-text-body-small--tight wt-pb-xs-2">
-                            <a data-breadcrumb-link="" data-menu-ui="menuitem" tabindex="0" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>"><?php echo $BRANDS ?></a>
+                            <a data-breadcrumb-link="" data-menu-ui="menuitem" tabindex="0" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>"><?php echo $BRANDS ?></a>
                                 <span class="etsy-icon arrow-separator wt-sem-text-primary wt-icon--smallest-xs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 21a1 1 0 0 1-.664-1.747l8.164-7.254-8.164-7.252a1 1 0 0 1 1.328-1.494L18.5 12l-9.836 8.747A1 1 0 0 1 8 21"></path></svg></span>
                         </li>
                         <li data-ui="list-item-breadcrumbs" class="top-nav-item wt-sem-text-primary wt-text-body-small--tight wt-pb-xs-2">
-                            <a data-breadcrumb-link="" data-menu-ui="menuitem" tabindex="0" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>"><?php echo $BRANDS ?> Login</a>
+                            <a data-breadcrumb-link="" data-menu-ui="menuitem" tabindex="0" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>"><?php echo $BRANDS ?> Login</a>
                         </li>
                            <pre> | </pre> 
                             
@@ -823,7 +823,7 @@ if (clientloggerIsEnabled) {
 </span>
     </button>
     <div id="etsys_pick" role="tooltip">
-        <?php echo $BRANDS ?> dan Vipmaths adalah platform pendidikan digital yang membuat matematika lebih mudah dan menyenangkan untuk siswa. <p class="wt-mt-xs-3"><a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" target="_blank"> <?php echo $BRANDS ?> </a></p>
+        <?php echo $BRANDS ?> dan Vipmaths adalah platform pendidikan digital yang membuat matematika lebih mudah dan menyenangkan untuk siswa. <p class="wt-mt-xs-3"><a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" target="_blank"> <?php echo $BRANDS ?> </a></p>
     </div>
 </div>
         </div>
@@ -1001,7 +1001,7 @@ if (clientloggerIsEnabled) {
 </div>
 
 <div class="wt-display-flex-xs wt-justify-content-flex-end wt-mt-xs-3">
-        <a class="wt-text-link wt-text-link-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>signin?from_page=https%3A%2F%2Flalocandadinonnaflo.com/es%2Fpost">
+        <a class="wt-text-link wt-text-link-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>signin?from_page=https%3A%2F%2Flalocandadinonnaflo.com/es%2Fpost">
         <span class="wt-icon wt-icon--smaller-xs wt-nudge-r-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 3a1 1 0 0 0-2 0v18a1 1 0 1 0 2 0v-6h14.766l-3.6-6 3.6-6zm0 2v8h11.234l-2.4-4 2.4-4z"></path></svg></span>Report this item to <?php echo $BRANDS ?>
     </a>
     </div>
@@ -1063,7 +1063,7 @@ if (clientloggerIsEnabled) {
         
         
             <div class="wt-mt-xs-1 wt-mb-xs-1">
-               <p data-start="332" data-end="902"><span style="color: #000000; "><a style="color: rgb(255, 0, 195);" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>"><?php echo $BRANDS ?></a> dan Vipmaths adalah platform pendidikan digital yang membuat matematika lebih mudah dan menyenangkan untuk siswa. Vipmaths menawarkan pembelajaran yang efektif untuk semua jenjang dengan pendekatan interaktif dan sistem pembelajaran adaptif. Ahli pendidikan membuat materi ini mudah dipahami dan relevan dengan kurikulum terbaru. Vipmaths adalah tempat yang bagus untuk membantu siswa belajar logika dan analisis karena memiliki forum diskusi, fitur evaluasi otomatis, dan laporan progres. Vipmaths terus berinovasi untuk menawarkan metode belajar matematika yang menarik, fleksibel, dan hasilnya nyata, didukung oleh komunitas pelajar aktif dan tutor profesional.</span></p>
+               <p data-start="332" data-end="902"><span style="color: #000000; "><a style="color: rgb(255, 0, 195);" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>"><?php echo $BRANDS ?></a> dan Vipmaths adalah platform pendidikan digital yang membuat matematika lebih mudah dan menyenangkan untuk siswa. Vipmaths menawarkan pembelajaran yang efektif untuk semua jenjang dengan pendekatan interaktif dan sistem pembelajaran adaptif. Ahli pendidikan membuat materi ini mudah dipahami dan relevan dengan kurikulum terbaru. Vipmaths adalah tempat yang bagus untuk membantu siswa belajar logika dan analisis karena memiliki forum diskusi, fitur evaluasi otomatis, dan laporan progres. Vipmaths terus berinovasi untuk menawarkan metode belajar matematika yang menarik, fleksibel, dan hasilnya nyata, didukung oleh komunitas pelajar aktif dan tutor profesional.</span></p>
 <p data-start="332" data-end="902"><span style="color: #000000; ">Link Alternatif 1 <a href="https://link.space/@jpterus66" style=" color: rgb(255, 0, 195);">JPTERUS66</a> » <strong> <a href="https://link.space/@jpterus66" style=" color: rgb(255, 0, 195);">https://link.space/@jpterus66</a></strong></i></p>
 <p data-start="332" data-end="902"><span style="color: #000000; ">Link Alternatif 2 <a href="https://linkr.bio/jpterus66" style=" color: rgb(255, 0, 195);">JPTERUS66</a> » <strong> <a href="https://linkr.bio/jpterus66" style=" color: rgb(255, 0, 195);">https://linkr.bio/jpterus66</a></strong></p>
 
@@ -1074,7 +1074,7 @@ if (clientloggerIsEnabled) {
         
     ">
         <span class="wt-text-title-small">
-    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="wt-text-link-no-underline wt-sem-text-primary">
+    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="wt-text-link-no-underline wt-sem-text-primary">
         <?php echo $BRANDS ?>
     </a>
 </span>
@@ -1094,7 +1094,7 @@ if (clientloggerIsEnabled) {
     </div>
         <div class="wt-ml-xs-1">
             <div class="wt-text-link-no-underline review-stars-text-decoration-none">
-    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" data-click-source="review_stars" aria-label="4.9 out of 5 stars. See reviews."><span class="wt-display-inline-block wt-mr-xs-1" data-stars-svg-container="">
+    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" data-click-source="review_stars" aria-label="4.9 out of 5 stars. See reviews."><span class="wt-display-inline-block wt-mr-xs-1" data-stars-svg-container="">
     <input type="hidden" name="initial-rating" value="4.8554" />
     <input type="hidden" name="rating" value="4.8554" />
     <span class="wt-screen-reader-only">5 out of 5 stars</span>
@@ -3437,7 +3437,7 @@ if (clientloggerIsEnabled) {
 <li class="wt-block-grid__item wt-display-flex-xs wt-align-items-flex-start">
             <div><span class="wt-icon wt-nudge-b-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 8v7H3v5h5v-1.25h2.5v-2H8V15H6.5V8H8V6.5h7V8h1.75v2.457l2 1.714V8H20V3h-5v1.5H8V3H3v5z"></path><path d="m12.39 9.129 9.273 7.971-4.17.29 1.378 3-2.272 1.043-1.36-2.962-2.854 2.887z"></path></svg></span></div>
         <div class="wt-ml-xs-1 how-its-made-label-product-details">
-                Designed by <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" target="_blank" class="wt-text-link-no-underline wt-text-title">SITUS <?php echo $BRANDS ?></a>
+                Designed by <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" target="_blank" class="wt-text-link-no-underline wt-text-title">SITUS <?php echo $BRANDS ?></a>
 
         </div>
 </li>
@@ -3549,7 +3549,7 @@ if (clientloggerIsEnabled) {
             </button>
             <div id="shipping-highlights-estimated-delivery-date-popover" role="tooltip">
                 <p class="wt-text-caption wt-mb-xs-1">
-                    Jika anda bermain di situs <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" target="_blank">MPO SLOT</a> yang memiliki lisensi resmi seperti <?php echo $BRANDS ?>. Anda berhak mendapatkan hadiah tambahan yang besar hari ini.
+                    Jika anda bermain di situs <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" target="_blank">MPO SLOT</a> yang memiliki lisensi resmi seperti <?php echo $BRANDS ?>. Anda berhak mendapatkan hadiah tambahan yang besar hari ini.
                 </p>
                 <span class="wt-popover__arrow"></span>
             </div>
@@ -3992,7 +3992,7 @@ if (clientloggerIsEnabled) {
             <strong><?php echo $BRANDS ?> Perlindungan Pembelian</strong>
             <br />
             Berbelanja dengan percaya diri di <?php echo $BRANDS ?>, mengetahui jika terjadi kesalahan pada pesanan, kami siap membantu Anda untuk semua pembelian yang memenuhi syarat â€”
-            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" target="_blank" class="wt-text-link">
+            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" target="_blank" class="wt-text-link">
                 see program terms
             </a>
         </p>
@@ -4063,12 +4063,12 @@ if (clientloggerIsEnabled) {
     <div>
         <p class="wt-text-heading-small wt-line-height-tight wt-mb-lg-1"><?php echo $BRANDS ?></p>
         <p class=" wt-sem-text-primary wt-text-caption">
-            Owner of <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="wt-text-link">SITUS GACOR</a>
+            Owner of <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="wt-text-link">SITUS GACOR</a>
         </p>
         <div data-follow-shop-region="">
     <div data-action="follow-shop-button-container" class="wt-display-flex-xs wt-align-items-center">
         <input type="hidden" class="id" name="user_id" value="386926495" />
-            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" rel="nofollow" data-downtime-overlay-type="favorite" data-supplemental-state--use_follow_text="true" class="inline-overlay-trigger favorite-shop-action wt-btn wt-btn--small wt-btn--transparent follow-shop-button-listing-header-v3 wt-btn--transparent-flush-left" aria-label="Follow shop" data-action="follow-shop-button" data-shop-id="25947065" data-source-name="listing_header" data-module-name="">
+            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" rel="nofollow" data-downtime-overlay-type="favorite" data-supplemental-state--use_follow_text="true" class="inline-overlay-trigger favorite-shop-action wt-btn wt-btn--small wt-btn--transparent follow-shop-button-listing-header-v3 wt-btn--transparent-flush-left" aria-label="Follow shop" data-action="follow-shop-button" data-shop-id="25947065" data-source-name="listing_header" data-module-name="">
                 <span class="etsy-icon wt-icon--smaller-xs" data-not-following-icon=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z"></path></svg></span>
                 <span class="etsy-icon wt-icon--smaller-xs wt-display-none wt-text-brick" data-following-icon=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16.5,3A6.953,6.953,0,0,0,12,5.051,6.912,6.912,0,0,0,7.5,3C4.364,3,2,5.579,2,9c0,5.688,8.349,12,10,12S22,14.688,22,9C22,5.579,19.636,3,16.5,3Z"></path></svg></span>
                         <span data-following-message="" class="wt-ml-xs-1 listing-header-v3-message wt-display-inline-block wt-position-relative wt-display-none ">
@@ -4084,7 +4084,7 @@ if (clientloggerIsEnabled) {
 </div>
     </div>
 </div>
-<a rel="nofollow" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>messages/new?with_id=386926495&amp;referring_id=4302118744&amp;referring_type=listing&amp;recipient_id=386926495&amp;from_action=contact-seller" class="wt-btn wt-btn--outline wt-width-full contact-action convo-overlay-trigger inline-overlay-trigger" role="button" data-to_username="5lbr96ndo091sgp3" data-to_user_id="386926495" data-to_user_display_name="<?php echo $BRANDS ?>" data-referring_type="listing" data-referring_id="4302118744" data-subject="" data-message="" aria-label="Message <?php echo $BRANDS ?>">
+<a rel="nofollow" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>messages/new?with_id=386926495&amp;referring_id=4302118744&amp;referring_type=listing&amp;recipient_id=386926495&amp;from_action=contact-seller" class="wt-btn wt-btn--outline wt-width-full contact-action convo-overlay-trigger inline-overlay-trigger" role="button" data-to_username="5lbr96ndo091sgp3" data-to_user_id="386926495" data-to_user_display_name="<?php echo $BRANDS ?>" data-referring_type="listing" data-referring_id="4302118744" data-subject="" data-message="" aria-label="Message <?php echo $BRANDS ?>">
     
     
     <span>Message <?php echo $BRANDS ?></span> 
@@ -4155,7 +4155,7 @@ if (clientloggerIsEnabled) {
 
                 <div class="wt-mb-xs-2">
                     <p class="wt-mb-xs-2 wt-mt-xs-2">
-                        Need to get in touch with the seller? Try <a rel="nofollow" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>messages/new?with_id=386926495&amp;referring_id=25947065&amp;referring_type=shop&amp;recipient_id=386926495&amp;from_action=contact-seller" class="wt-display-inline-block contact-action convo-overlay-trigger inline-overlay-trigger" role="button" data-to_username="<?php echo $BRANDS ?>" data-to_user_id="386926495" data-to_user_display_name="<?php echo $BRANDS ?>" data-referring_type="shop" data-referring_id="25947065" data-subject="" data-message="" aria-label="messaging them">
+                        Need to get in touch with the seller? Try <a rel="nofollow" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>messages/new?with_id=386926495&amp;referring_id=25947065&amp;referring_type=shop&amp;recipient_id=386926495&amp;from_action=contact-seller" class="wt-display-inline-block contact-action convo-overlay-trigger inline-overlay-trigger" role="button" data-to_username="<?php echo $BRANDS ?>" data-to_user_id="386926495" data-to_user_display_name="<?php echo $BRANDS ?>" data-referring_type="shop" data-referring_id="25947065" data-subject="" data-message="" aria-label="messaging them">
     
     
     <span>messaging them</span> 
@@ -4409,7 +4409,7 @@ if (clientloggerIsEnabled) {
   <path d="M18.646 16.01c-.268-4.538-1.24-10.998-3.187-11.411-1.935-.414-7.932 2.19-11.156 6.277-1.095 1.387-.779 3.333.706 4.294 2.822 1.837 6.812 3.249 10.097 3.918 1.898.389 3.65-1.132 3.54-3.078z" fill="#4BC46D"></path>
 </svg></span>
     <p class="wt-text-body-small">
-            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Rizki Pratama" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4677086143">
+            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Rizki Pratama" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4677086143">
         Rizki Pratama</a>
         <span class="wt-bl-xs wt-mr-xs-1 wt-ml-xs-1 wt-nudge-t-1 wt-nudge-r-1"></span>
         Sep 16, 2025
@@ -4446,7 +4446,7 @@ if (clientloggerIsEnabled) {
   <path d="M18.646 16.01c-.268-4.538-1.24-10.998-3.187-11.411-1.935-.414-7.932 2.19-11.156 6.277-1.095 1.387-.779 3.333.706 4.294 2.822 1.837 6.812 3.249 10.097 3.918 1.898.389 3.65-1.132 3.54-3.078z" fill="#4BC46D"></path>
 </svg></span>
     <p class="wt-text-body-small">
-            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Rizki Pratama" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4677086143">
+            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Rizki Pratama" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4677086143">
         Rizki Pratama</a>
         <span class="wt-bl-xs wt-mr-xs-1 wt-ml-xs-1 wt-nudge-t-1 wt-nudge-r-1"></span>
         Sep 9, 2025
@@ -4499,7 +4499,7 @@ if (clientloggerIsEnabled) {
   <path d="M18.863 8.412c-3.8-1.6-7.713-2.9-11.713-3.912a133.96 133.96 0 00-2.4 9.887l7.025 5.113s6.1-3.063 7.237-3.813c.788-.524-.15-7.274-.15-7.274z" fill="#095E31"></path>
 </svg></span>
     <p class="wt-text-body-small">
-            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Santi Wijaya" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4706945066">
+            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Santi Wijaya" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4706945066">
         Santi Wijaya</a>
         <span class="wt-bl-xs wt-mr-xs-1 wt-ml-xs-1 wt-nudge-t-1 wt-nudge-r-1"></span>
         Sep 7, 2025
@@ -4536,7 +4536,7 @@ if (clientloggerIsEnabled) {
   <path d="M18.863 8.412c-3.8-1.6-7.713-2.9-11.713-3.912a133.96 133.96 0 00-2.4 9.887l7.025 5.113s6.1-3.063 7.237-3.813c.788-.524-.15-7.274-.15-7.274z" fill="#095E31"></path>
 </svg></span>
     <p class="wt-text-body-small">
-            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Santi Wijaya" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4706945066">
+            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Santi Wijaya" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4706945066">
         Santi Wijaya</a>
         <span class="wt-bl-xs wt-mr-xs-1 wt-ml-xs-1 wt-nudge-t-1 wt-nudge-r-1"></span>
         Sep 7, 2025
@@ -4589,7 +4589,7 @@ if (clientloggerIsEnabled) {
 
         </div>
     <p class="wt-text-body-small">
-            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Kurnia Mega" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4699952562">
+            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Kurnia Mega" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4699952562">
         Kurnia Mega</a>
         <span class="wt-bl-xs wt-mr-xs-1 wt-ml-xs-1 wt-nudge-t-1 wt-nudge-r-1"></span>
         Sep 10, 2025
@@ -4626,7 +4626,7 @@ if (clientloggerIsEnabled) {
 
         </div>
     <p class="wt-text-body-small">
-            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Kurnia Mega" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4699952562">
+            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Kurnia Mega" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4699952562">
         Kurnia Mega</a>
         <span class="wt-bl-xs wt-mr-xs-1 wt-ml-xs-1 wt-nudge-t-1 wt-nudge-r-1"></span>
         Sep 10, 2025
@@ -4679,7 +4679,7 @@ if (clientloggerIsEnabled) {
   <path d="M11.468 6l-6.385.076L4.5 8.711l.114 5.41.583 3.75 4.89.418 3.7.38 2.305-.735L19.5 7.216l-.481-.988L11.468 6z" fill="#122868"></path>
 </svg></span>
     <p class="wt-text-body-small">
-            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Bintang Nugraha" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4719115647">
+            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Bintang Nugraha" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4719115647">
         Bintang Nugraha</a>
         <span class="wt-bl-xs wt-mr-xs-1 wt-ml-xs-1 wt-nudge-t-1 wt-nudge-r-1"></span>
         Sep 10, 2025
@@ -4716,7 +4716,7 @@ if (clientloggerIsEnabled) {
   <path d="M11.468 6l-6.385.076L4.5 8.711l.114 5.41.583 3.75 4.89.418 3.7.38 2.305-.735L19.5 7.216l-.481-.988L11.468 6z" fill="#122868"></path>
 </svg></span>
     <p class="wt-text-body-small">
-            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Bintang Nugraha" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4719115647">
+            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" rel="nofollow" aria-label="Reviewer Bintang Nugraha" class="wt-text-link-no-underline wt-text-title-small" data-review-username="" data-transaction-id="4719115647">
         Bintang Nugraha</a>
         <span class="wt-bl-xs wt-mr-xs-1 wt-ml-xs-1 wt-nudge-t-1 wt-nudge-r-1"></span>
         Sep 7, 2025
@@ -4748,34 +4748,34 @@ if (clientloggerIsEnabled) {
             </div>
 
             <div class="wt-action-group__item-container">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="wt-action-group__item wt-btn wt-btn--small wt-pr-xs-2 wt-pl-xs-2 wt-is-selected" aria-current="true">
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="wt-action-group__item wt-btn wt-btn--small wt-pr-xs-2 wt-pl-xs-2 wt-is-selected" aria-current="true">
                         <span>1</span>
                     </a>
             </div>
             <div class="wt-action-group__item-container">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="wt-action-group__item wt-btn wt-btn--small wt-pr-xs-2 wt-pl-xs-2" data-page="2">
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="wt-action-group__item wt-btn wt-btn--small wt-pr-xs-2 wt-pl-xs-2" data-page="2">
                         <span>2</span>
                     </a>
             </div>
             <div class="wt-action-group__item-container">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="wt-action-group__item wt-btn wt-btn--small wt-pr-xs-2 wt-pl-xs-2" data-page="3">
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="wt-action-group__item wt-btn wt-btn--small wt-pr-xs-2 wt-pl-xs-2" data-page="3">
                         <span>3</span>
                     </a>
             </div>
             <div class="wt-action-group__item-container">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="wt-action-group__item wt-btn wt-btn--small wt-pr-xs-2 wt-pl-xs-2" data-page="4">
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="wt-action-group__item wt-btn wt-btn--small wt-pr-xs-2 wt-pl-xs-2" data-page="4">
                         <span>4</span>
                     </a>
             </div>
             <div class="wt-action-group__item-container">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="wt-action-group__item wt-btn wt-btn--small wt-pr-xs-2 wt-pl-xs-2" data-page="5">
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="wt-action-group__item wt-btn wt-btn--small wt-pr-xs-2 wt-pl-xs-2" data-page="5">
                         <span>5</span>
                     </a>
             </div>
 
 
             <div class="wt-action-group__item-container">
-                <a class="wt-action-group__item wt-btn wt-btn--small wt-btn--icon " href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" data-page="2">
+                <a class="wt-action-group__item wt-btn wt-btn--small wt-btn--icon " href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" data-page="2">
                     <span class="wt-screen-reader-only">Next page</span>
                     <span class="wt-icon wt-icon--smaller"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
   <path d="M17.3 12.7l.7-.7-.7-.7-4-4c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l2.3 2.3H7c-.6 0-1 .4-1 1s.4 1 1 1h7.2l-2.3 2.3c-.2.2-.3.4-.3.7 0 .6.4 1 1 1 .3 0 .5-.1.7-.3l4-4z"></path>
@@ -4884,7 +4884,7 @@ if (clientloggerIsEnabled) {
     
     <div class="seller-cred wt-width-full wt-display-flex-xs wt-flex-gap-xs-2 wt-flex-direction-column-xs wt-align-items-center wt-mb-xs-3 wt-mb-md-4">
         <div class="wt-position-relative">
-            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">
+            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">
                 <img data-clg-id="WtImage" class="wt-circle wt-display-block wt-image--cover wt-image" src="https://JPTERUS66.calcufast.xyz/JPTERUS66/favicon.png" alt="<?php echo $BRANDS ?>" style="aspect-ratio: 1;" sizes="(max-width: 639px) 65px, 80px" srcset="https://JPTERUS66.calcufast.xyz/JPTERUS66/favicon.png 100w, https://JPTERUS66.calcufast.xyz/JPTERUS66/favicon.png 200w" />
 
             </a>
@@ -4911,18 +4911,18 @@ if (clientloggerIsEnabled) {
 
     <div class="wt-display-flex-xs wt-flex-direction-column-xs wt-justify-content-space-between">
         <div class="wt-display-flex-xs wt-flex-gap-xs-1 wt-align-items-center">
-            <a class="wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>shop/"><p class="wt-text-heading"><?php echo $BRANDS ?></p></a>
+            <a class="wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>shop/"><p class="wt-text-heading"><?php echo $BRANDS ?></p></a>
         </div>
     </div>
     
     <div class="wt-display-flex-xs wt-flex-direction-row-xs wt-flex-wrap">
-        <a class="wt-text-link-no-underline wt-text-body" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Owned by <?php echo $BRANDS ?></a>
+        <a class="wt-text-link-no-underline wt-text-body" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Owned by <?php echo $BRANDS ?></a>
             <span class="divider wt-align-self-center wt-mr-xs-1 wt-ml-xs-1">|</span>
             <p class="wt-text-body">Indonesia</p>
     </div>
     <div class="seller-cred-highlights wt-display-flex-xs wt-flex-direction-row-xs wt-mb-xs-1 wt-mb-md-2 wt-flex-wrap">
         <div class="" data-review-ratings-count="" data-rating="4.9">
-        <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" data-click-source="rating_reviews_signal" class="rating-and-reviews-count wt-display-flex-xs wt-align-items-center wt-text-link-no-underline">
+        <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" data-click-source="rating_reviews_signal" class="rating-and-reviews-count wt-display-flex-xs wt-align-items-center wt-text-link-no-underline">
             <span class="wt-icon wt-icon--smaller-xs rating-and-reviews-count__icon wt-nudge-b-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.782 8.676 12 2.145l-2.78 6.53-7.086.625 5.364 4.663-1.595 6.918L12 17.228l6.097 3.653-1.596-6.919L21.867 9.3z"></path></svg></span> 
                 <span class="rating-and-reviews-count__avg-rating wt-text-title">4.9</span>
                 <span class="rating-and-reviews-count__reviews-count wt-text-title">
@@ -4939,7 +4939,7 @@ if (clientloggerIsEnabled) {
     </div>
 
     <div class="seller-cred-buttons wt-display-flex-xs wt-justify-content-center wt-align-items-center wt-flex-gap-xs-2 wt-flex-gap-lg-4 wt-width-full wt-flex-wrap">
-        <div class="wt-flex-xs-1 wt-flex-lg-0"><a rel="nofollow" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="wt-btn wt-btn--outline wt-btn--small wt-width-full-xs wt-no-wrap listing-page-contact-seller-button seller-cred-button contact-action convo-overlay-trigger inline-overlay-trigger" role="button" data-to_username="5lbr96ndo091sgp3" data-to_user_id="386926495" data-to_user_display_name="<?php echo $BRANDS ?>" data-referring_type="listing" data-referring_id="4302118744" data-subject="" data-message="" aria-label="Message seller">
+        <div class="wt-flex-xs-1 wt-flex-lg-0"><a rel="nofollow" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="wt-btn wt-btn--outline wt-btn--small wt-width-full-xs wt-no-wrap listing-page-contact-seller-button seller-cred-button contact-action convo-overlay-trigger inline-overlay-trigger" role="button" data-to_username="5lbr96ndo091sgp3" data-to_user_id="386926495" data-to_user_display_name="<?php echo $BRANDS ?>" data-referring_type="listing" data-referring_id="4302118744" data-subject="" data-message="" aria-label="Message seller">
     
     
     <span>Message seller</span> 
@@ -4949,7 +4949,7 @@ if (clientloggerIsEnabled) {
         <div class="wt-flex-xs-1 wt-flex-lg-0"><div data-follow-shop-region="">
     <div data-action="follow-shop-button-container" class="wt-display-flex-xs wt-align-items-center">
         <input type="hidden" class="id" name="user_id" value="386926495" />
-            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" rel="nofollow" data-downtime-overlay-type="favorite" data-supplemental-state--use_follow_text="true" class="inline-overlay-trigger favorite-shop-action inline-overlay-trigger favorite-shop-action wt-btn wt-btn--small wt-btn--secondary wt-display-flex-xs wt-align-items-center wt-justify-content-center wt-width-full-xs wt-no-wrap seller-cred-button" aria-label="Follow shop" data-action="follow-shop-button" data-shop-id="25947065" data-source-name="other" data-module-name="">
+            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" rel="nofollow" data-downtime-overlay-type="favorite" data-supplemental-state--use_follow_text="true" class="inline-overlay-trigger favorite-shop-action inline-overlay-trigger favorite-shop-action wt-btn wt-btn--small wt-btn--secondary wt-display-flex-xs wt-align-items-center wt-justify-content-center wt-width-full-xs wt-no-wrap seller-cred-button" aria-label="Follow shop" data-action="follow-shop-button" data-shop-id="25947065" data-source-name="other" data-module-name="">
                 
                 
                         <span data-following-message="" class="wt-ml-xs-1 wt-display-none ">
@@ -5031,7 +5031,7 @@ if (clientloggerIsEnabled) {
     </div>
 
     <p id="product-safety-notice-toggle" class="wt-text-truncate--multi-line">
-                    <span class="wt-text-caption"><strong>Disclaimer:</strong> Konten ini bersifat informatif dan ditujukan untuk pembaca dewasa (18+), menampilkan <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" target="_blank"><?php echo $BRANDS ?> </a> sebagai platform hiburan online yang mengedepankan prinsip permainan bertanggung jawabâ€”kami menegaskan bahwa aktivitas ini mengandung risiko finansial dan bukan merupakan sumber penghasilan, sehingga keputusan serta hasil akhir sepenuhnya bergantung pada pilihan pribadi, manajemen risiko, dan faktor keahlian masing-masing individu.</span>
+                    <span class="wt-text-caption"><strong>Disclaimer:</strong> Konten ini bersifat informatif dan ditujukan untuk pembaca dewasa (18+), menampilkan <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" target="_blank"><?php echo $BRANDS ?> </a> sebagai platform hiburan online yang mengedepankan prinsip permainan bertanggung jawabâ€”kami menegaskan bahwa aktivitas ini mengandung risiko finansial dan bukan merupakan sumber penghasilan, sehingga keputusan serta hasil akhir sepenuhnya bergantung pada pilihan pribadi, manajemen risiko, dan faktor keahlian masing-masing individu.</span>
 
     </p>
 </div>
@@ -5073,7 +5073,7 @@ if (clientloggerIsEnabled) {
         </div>
         <div class="wt-pb-xs-1">
             <div class="wt-display-inline-block">
-        <span class="inline-svg svg-payment-icon wt-p-xs-1 wt-mb-xs-1"><svg xmlns:inkscape="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" xmlns:sodipodi="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 1920.01 620.07999" xml:space="preserve" sodipodi:docname="d262c3fc767b0f2b042f1a30f2519b44.svgz" width="100%" height="100%" aria-labelledby="paymentsvisa-2-visa" role="img" focusable="false"><defs id="defs9"></defs><sodipodi:namedview id="namedview7" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0"></sodipodi:namedview>
+        <span class="inline-svg svg-payment-icon wt-p-xs-1 wt-mb-xs-1"><svg xmlns:inkscape="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" xmlns:sodipodi="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 1920.01 620.07999" xml:space="preserve" sodipodi:docname="d262c3fc767b0f2b042f1a30f2519b44.svgz" width="100%" height="100%" aria-labelledby="paymentsvisa-2-visa" role="img" focusable="false"><defs id="defs9"></defs><sodipodi:namedview id="namedview7" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0"></sodipodi:namedview>
 <style type="text/css" id="style2">
 	.visa-svg-path{fill:#1434CB;}
 </style>
@@ -5160,9 +5160,9 @@ if (clientloggerIsEnabled) {
 </div>
     
     <div class="wt-text-caption wt-text-center-xs wt-text-left-lg">
-        <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>"><?php echo $BRANDS ?></a>
+        <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>"><?php echo $BRANDS ?></a>
             <span class="etsy-icon wt-sem-text-secondary wt-icon--smallest-xs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 21a1 1 0 0 1-.664-1.747l8.164-7.254-8.164-7.252a1 1 0 0 1 1.328-1.494L18.5 12l-9.836 8.747A1 1 0 0 1 8 21"></path></svg></span>
-        <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">SITUS GACOR</a>
+        <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">SITUS GACOR</a>
 </div><br />
     
     <div id="google-one-tap-modal-div" class="google-one-tap-modal-div">
@@ -5255,7 +5255,7 @@ if (clientloggerIsEnabled) {
                 </legend>
                 <p class="wt-text-body-01 wt-max-width-sm wt-ml-xs-0">
                     Simpan koleksi untuk diri sendiri atau beri inspirasi kepada pembeli lain! Perlu diingat bahwa siapa pun dapat melihat koleksi publikâ€”koleksi tersebut mungkin juga muncul di rekomendasi dan tempat lain.
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" target="_blank">View <?php echo $BRANDS ?> Privacy Policy</a></p>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" target="_blank">View <?php echo $BRANDS ?> Privacy Policy</a></p>
             </div>
             <div>
                     <div id="collection-privacy-control" class="wt-display-flex-md wt-flex-direction-column-xs wt-align-items-center" data-label-yes="Private" data-label-no="Public" data-selector="toggle-switch">
@@ -5390,7 +5390,7 @@ if (clientloggerIsEnabled) {
     <footer>
             <div class="chrome-footer__etsy-finds">
                 <div class="wt-text-center-xs wt-pl-xs-4 wt-pr-xs-4 wt-pt-xs-3 wt-pt-md-6">
-    <form action="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" method="POST" class="subscribe-form not-signed-in" data-finds-form="">
+    <form action="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" method="POST" class="subscribe-form not-signed-in" data-finds-form="">
 
         <input type="hidden" name="campaign_name" value="" />
         <input type="hidden" name="campaign_slug" value="new_at_etsy" />
@@ -5428,10 +5428,10 @@ if (clientloggerIsEnabled) {
                 Please enter a valid email address.
             </div>
             <div class="wt-alert wt-alert--inline wt-alert--status-01 wt-display-none wt-text-body-01" role="alert" aria-live="polite" data-requires-signin="" data-submission-response="">
-                Looks like you already have an account! Please <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" data-campaign-slug="new_at_etsy">Log in</a> to subscribe.
+                Looks like you already have an account! Please <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" data-campaign-slug="new_at_etsy">Log in</a> to subscribe.
             </div>
             <div class="wt-alert wt-alert--inline wt-alert--status-01 wt-display-none wt-text-body-01" role="alert" aria-live="polite" data-requires-signup="" data-submission-response="">
-                You&#39;ve already signed up for some newsletters, but you haven&#39;t confirmed your address. <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="" data-campaign-slug="new_at_etsy">Register</a> to confirm your address.
+                You&#39;ve already signed up for some newsletters, but you haven&#39;t confirmed your address. <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="" data-campaign-slug="new_at_etsy">Register</a> to confirm your address.
             </div>
             <div class="wt-alert wt-alert--inline wt-alert--success-01 wt-display-none wt-text-body-01" role="alert" aria-live="polite" data-success-signed-in="" data-success-no-email-signed-in="" data-success-no-email-signed-out="" data-submission-response="">
                 You&#39;ve been successfully signed up!
@@ -5493,43 +5493,43 @@ if (clientloggerIsEnabled) {
     <div id="footer-extra-links-shop" class="wt-content-toggle__body" aria-hidden="false">
         <ul class="wt-list-unstyled wt-text-left-xs wt-pl-sm-0 wt-pr-xs-1">
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">
                             
                             <span>Gift cards</span>
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" id="collage-footer__registry-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" id="collage-footer__registry-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">
                             
                             <span><?php echo $BRANDS ?> Registry</span>
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">
                             
                             <span>Sitemap</span>
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">
                             
                             <span><?php echo $BRANDS ?> blog</span>
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">
                             
                             <span><?php echo $BRANDS ?> United Kingdom</span>
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">
                             
                             <span><?php echo $BRANDS ?> Germany</span>
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">
                             
                             <span><?php echo $BRANDS ?> Canada</span>
                         </a>
@@ -5554,25 +5554,25 @@ if (clientloggerIsEnabled) {
     <div id="footer-extra-links-sell" class="wt-content-toggle__body" aria-hidden="false">
         <ul class="wt-list-unstyled wt-text-left-xs wt-pl-sm-0 wt-pr-xs-1">
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>sell?ref=ftr">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>sell?ref=ftr">
                             
                             <span>Sell on <?php echo $BRANDS ?></span>
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" id="collage-footer__community-teams-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" rel="nofollow">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" id="collage-footer__community-teams-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" rel="nofollow">
                             
                             <span>Teams</span>
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" id="collage-footer__community-forums-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" rel="nofollow">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" id="collage-footer__community-forums-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" rel="nofollow">
                             
                             <span>Forums</span>
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>affiliates?ref=ftr" rel="nofollow">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>affiliates?ref=ftr" rel="nofollow">
                             
                             <span>Affiliates &amp; Creators</span>
                         </a>
@@ -5597,13 +5597,13 @@ if (clientloggerIsEnabled) {
     <div id="footer-extra-links-about" class="wt-content-toggle__body" aria-hidden="false">
         <ul class="wt-list-unstyled wt-text-left-xs wt-pl-sm-0 wt-pr-xs-1">
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>about?ref=ftr">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>about?ref=ftr">
                             
                             <span><?php echo $BRANDS ?>, Inc.</span>
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>legal?ref=ftr">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>legal?ref=ftr">
                             
                             <span>Policies</span>
                         </a>
@@ -5615,25 +5615,25 @@ if (clientloggerIsEnabled) {
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>careers?ref=ftr">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>careers?ref=ftr">
                             
                             <span>Careers</span>
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>press?ref=ftr">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>press?ref=ftr">
                             
                             <span>Press</span>
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>impact?ref=ftr">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>impact?ref=ftr">
                             
                             <span>Impact</span>
                         </a>
                     </li>
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>help/article/25840304230?ref=ftr">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>help/article/25840304230?ref=ftr">
                             
                             <span>Legal imprint</span>
                         </a>
@@ -5658,7 +5658,7 @@ if (clientloggerIsEnabled) {
     <div id="footer-extra-links-help" class="wt-content-toggle__body" aria-hidden="false" data-keep-open="">
         <ul class="wt-list-unstyled wt-text-left-xs wt-pl-sm-0 wt-pr-xs-1">
                     <li class="wt-pt-xs-1 wt-pb-xs-2 wt-pb-md-1 wt-display-block wt-width-full ">
-                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>help?ref=ftr">
+                        <a class="appshell-responsive-footer-link wt-sem-text-on-surface-dark wt-text-link-no-underline" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>help?ref=ftr">
                             
                             <span>Help Center</span>
                         </a>
@@ -5708,14 +5708,14 @@ if (clientloggerIsEnabled) {
     </nav>
 
     <div class="chrome-footer__app-link" data-footer-app-link="">
-        <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="chrome-footer__app-link__logo" aria-label="Download the <?php echo $BRANDS ?> App">
+        <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="chrome-footer__app-link__logo" aria-label="Download the <?php echo $BRANDS ?> App">
             <span class="wt-icon wt-icon--largest"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" aria-hidden="true" focusable="false">
   <path d="M6.5 3.1v6s2.1 0 3.2-.1c.6.1 1.1-.3 1.2-.9.1-.1.1-.1.1-.2l.3-1.3h1l-.2 2.8.1 2.9h-1l-.2-1.1c-.1-.6-.6-1.1-1.2-1.1C9 10 6.5 10 6.5 10v5c0 1 .5 1.4 1.6 1.4h3.4c1.2.2 2.4-.5 2.8-1.6l.9-2h.8c-.1.4-.5 4-.6 4.8 0 0-3.1-.1-4.4-.1H5.2l-3.5.1v-.9l1.1-.2c.9-.1 1.2-.3 1.2-1 0 0 .1-2.2.1-5.9S4 3.9 4 3.9c0-.8-.3-.9-1.1-1.1l-1.1-.2v-.9l3.4.1h6.5c1.3 0 3.5-.2 3.5-.2s-.1 1.3-.2 4.5h-.9L13.8 5c-.3-1.5-.8-2.2-1.7-2.2H7c-.5 0-.5.1-.5.3zm13.2.7h1v3.4L24 7l-.2 1.5-3.2-.2v6c0 1.7.6 2.4 1.5 2.4.7 0 1.4-.3 1.8-.9l.5.6c-.6 1.1-1.9 1.8-3.2 1.7-1.5.1-2.8-1-2.9-2.5V8.4h-1.9v-.8c1.6-.2 2.8-1.2 3.3-3.8zm7 10.4l.6 1.5c.3.9 1.2 1.4 2.1 1.3 1.4 0 2-.7 2-1.6 0-2.8-5.4-2-5.4-5.7 0-2.1 1.7-3.1 3.9-3.1 1.1 0 2.1.2 3.2.5-.2.9-.2 1.8-.2 2.7l-.9.1-.6-1.6c-.4-.5-1-.8-1.6-.7-1 0-2 .4-2 1.5 0 2.5 5.6 2 5.6 5.7 0 2.1-1.9 3.2-4.1 3.2-1.2 0-2.3-.3-3.4-.7.1-1 .1-2.1 0-3.1h.8zM33 22c.2-1 .4-2 .6-3.1l.9-.1.3 1.7c.1.5.5.8 1 .7 1.1 0 2.4-.6 3.7-2.9-.6-1.4-2.3-5.8-3.8-9.3-.4-.9-.5-1-1-1.1l-.4-.2V7l2.4.1 3-.2v.8l-.7.2c-.4 0-.8.3-.8.7 0 .1 0 .2.1.3.2.5 1.5 4.1 2.4 6.6.8-1.7 2.4-5.5 2.6-6.2.1-.2.1-.4.2-.6 0-.4-.4-.8-.8-.8l-.7-.1v-.9l2.3.1 2.1-.1v.8l-.4.4c-.6.1-1 .5-1.2 1.1l-3.6 8.4c-2.1 4.8-4.3 5.2-5.9 5.2-.8-.1-1.6-.3-2.3-.8z"></path>
 </svg></span>
         </a>
 
         <div>
-            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" tabindex="-1" class="wt-btn wt-btn--base-lg wt-btn--small-xs chrome-footer__app-link__button">Download the <?php echo $BRANDS ?> App</a>
+            <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" tabindex="-1" class="wt-btn wt-btn--base-lg wt-btn--small-xs chrome-footer__app-link__button">Download the <?php echo $BRANDS ?> App</a>
         </div>
     </div>
 </div>
@@ -5724,7 +5724,7 @@ if (clientloggerIsEnabled) {
             <div class="chrome-footer__final">
 
                     <div class="chrome-footer__final-col">
-                        <a id="locale-picker-trigger" class="wt-btn wt-btn--transparent wt-btn--transparent-flush-left wt-btn--transparent-flush-right  wt-btn--light  wt-btn--small" aria-label="Update your settings Indonesia English (US) Rp (IDR)" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>your/account/locale_preferences?from_page=https%3A%2F%2Flalocandadinonnaflo.com/es%2Fpost" data-aria-controls="wt-locale-picker-overlay" role="button" aria-controls="wt-locale-picker-overlay">
+                        <a id="locale-picker-trigger" class="wt-btn wt-btn--transparent wt-btn--transparent-flush-left wt-btn--transparent-flush-right  wt-btn--light  wt-btn--small" aria-label="Update your settings Indonesia English (US) Rp (IDR)" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>your/account/locale_preferences?from_page=https%3A%2F%2Flalocandadinonnaflo.com/es%2Fpost" data-aria-controls="wt-locale-picker-overlay" role="button" aria-controls="wt-locale-picker-overlay">
     <span class="wt-display-inline-block wt-nudge-t-2 wt-vertical-align-middle">    <span class="etsy-icon locale-icon-svg-default wt-display-block wt-text-white
                     wt-icon--smaller-xs wt-nudge-b-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12,2A10,10,0,1,0,22,12,10.012,10.012,0,0,0,12,2ZM9,18.883v0.528A7.938,7.938,0,0,1,4.06,11.06l3.385,3.385a2.967,2.967,0,0,0,1.649,4.4ZM17.5,15a2.509,2.509,0,0,0,.5-0.05V15a0.992,0.992,0,0,0,.927.985A8,8,0,0,1,12,20c-0.216,0-.427-0.016-0.639-0.032l1.254-2.5-0.015.006A2.968,2.968,0,0,0,13,16a2.988,2.988,0,0,0-5-2.221V11H9a1,1,0,0,0,1-1V9a1,1,0,0,0,1-1,1,1,0,0,0,0-2H6.726A7.9,7.9,0,0,1,14,4.263V6a1,1,0,0,0,2,0V5.082a8.047,8.047,0,0,1,2,1.649V7H17a1,1,0,0,0,0,2h2.411a7.941,7.941,0,0,1,.326,1H17a2.556,2.556,0,0,0-2,2.5A2.5,2.5,0,0,0,17.5,15Z"></path></svg></span>
 </span>
@@ -5739,23 +5739,23 @@ if (clientloggerIsEnabled) {
 
                         <ul class="chrome-footer__final-links wt-list-inline">
                             <li class="wt-list-inline__item">
-                                <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="chrome-footer__final-link">
+                                <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="chrome-footer__final-link">
                                     Terms of Use
                                 </a>
                             </li>
                             <li class="wt-list-inline__item">
-                                <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="chrome-footer__final-link">
+                                <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="chrome-footer__final-link">
                                     Privacy
                                 </a>
                             </li>
                             <li class="wt-list-inline__item">
-                                <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="chrome-footer__final-link">
+                                <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="chrome-footer__final-link">
                                     Interest-based ads
                                 </a>
                             </li>
 
                             <li class="wt-list-inline__item">
-                                <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" class="chrome-footer__final-link">
+                                <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" class="chrome-footer__final-link">
                                     Local Shops
                                 </a>
                             </li>
@@ -5802,7 +5802,7 @@ if (clientloggerIsEnabled) {
             <div>
     <div data-section="intro">
         <p class="wt-text-caption wt-mb-xs-1"><?php echo $BRANDS ?> menggunakan cookie dan teknologi serupa untuk memberi Anda pengalaman yang lebih baik, memungkinkan hal-hal seperti:</p>
-<p class="wt-text-caption wt-line-height-tight wt-text-link">Informasi lebih lanjut dapat ditemukan di <?php echo $BRANDS ?> <a class="wt-text-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>legal/cookies-and-tracking-technologies">Kebijakan Cookie &amp; Teknologi Serupa</a> atau di <a class="wt-text-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>legal/privacy">Privacy Policy</a>.</p>
+<p class="wt-text-caption wt-line-height-tight wt-text-link">Informasi lebih lanjut dapat ditemukan di <?php echo $BRANDS ?> <a class="wt-text-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>legal/cookies-and-tracking-technologies">Kebijakan Cookie &amp; Teknologi Serupa</a> atau di <a class="wt-text-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>legal/privacy">Privacy Policy</a>.</p>
     </div>
 
     <div class="wt-pt-xl-6 wt-display-flex-xl wt-pt-lg-6 wt-display-flex-lg wt-pt-md-6 wt-display-flex-md wt-pt-sm-6 wt-display-flex-sm wt-pt-xs-6 wt-display-flex-xs">
@@ -5821,7 +5821,7 @@ if (clientloggerIsEnabled) {
         <div class="wt-flex-xl-5 wt-flex-lg-5 wt-flex-md-5 wt-flex-sm-5 wt-flex-xs-5">
             <h2 class="wt-text-title-01 wt-mb-xs-4 wt-break-word">Periklanan yang Dipersonalisasi</h2>
 <p class="wt-text-caption wt-mb-xs-2">Untuk mengaktifkan iklan yang dipersonalisasi (seperti iklan berbasis minat), kami dapat membagikan data Anda dengan mitra pemasaran dan periklanan kami menggunakan cookie dan teknologi lainnya. Mitra tersebut mungkin memiliki informasi mereka sendiri yang telah mereka kumpulkan tentang Anda. Menonaktifkan pengaturan iklan yang dipersonalisasi tidak akan menghentikan Anda melihat iklan <?php echo $BRANDS ?>, tetapi dapat membuat iklan yang Anda lihat kurang relevan atau lebih berulang.</p>
-<p class="wt-text-caption wt-mb-xs-2"> Iklan yang dipersonalisasi dapat dianggap sebagai &quot;penjualan&quot; atau &quot;pembagian&quot; informasi berdasarkan undang-undang privasi California dan negara bagian lainnya, dan Anda mungkin memiliki hak untuk memilih keluar. Menonaktifkan iklan yang dipersonalisasi memungkinkan Anda untuk menggunakan hak Anda untuk memilih keluar. Pelajari lebih lanjut di <a class="wt-text-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>legal/privacy/">Privacy Policy.</a>, <a class="wt-text-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>help/hc/en-us/articles/360042433614-How-to-Opt-out-of-Personalized-Advertising">Help Center</a>, dan <a class="wt-text-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>legal/cookies">Cookies &amp; Similar Technologies Policy</a>.</p>
+<p class="wt-text-caption wt-mb-xs-2"> Iklan yang dipersonalisasi dapat dianggap sebagai &quot;penjualan&quot; atau &quot;pembagian&quot; informasi berdasarkan undang-undang privasi California dan negara bagian lainnya, dan Anda mungkin memiliki hak untuk memilih keluar. Menonaktifkan iklan yang dipersonalisasi memungkinkan Anda untuk menggunakan hak Anda untuk memilih keluar. Pelajari lebih lanjut di <a class="wt-text-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>legal/privacy/">Privacy Policy.</a>, <a class="wt-text-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>help/hc/en-us/articles/360042433614-How-to-Opt-out-of-Personalized-Advertising">Help Center</a>, dan <a class="wt-text-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>legal/cookies">Cookies &amp; Similar Technologies Policy</a>.</p>
         </div>
         <div class="wt-flex-xl-1 wt-flex-lg-1 wt-flex-md-1 wt-flex-sm-1 wt-flex-xs-1">
             <div class="wt-display-flex-xl wt-display-flex-lg wt-display-flex-md wt-display-flex-sm wt-display-flex-xs wt-justify-content-flex-end">
@@ -5889,7 +5889,7 @@ if (clientloggerIsEnabled) {
                 <p class="wt-mb-xs-2 prose">Hal pertama yang harus Anda lakukan adalah menghubungi penjual secara langsung.</p>
                 <p class="wt-mb-xs-2 ip-policy prose">Jika Anda sudah melakukannya, barang Anda belum sampai, atau tidak sesuai deskripsi, Anda dapat melaporkannya ke <?php echo $BRANDS ?> dengan membuka kasus.</p>
                 <p class="wt-mb-xs-2 prose">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" target="_blank">
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" target="_blank">
                         Laporkan masalah dengan pesanan
                     </a>
                 </p>
@@ -5900,17 +5900,17 @@ if (clientloggerIsEnabled) {
             </div>
             <div data-report-choice="flag-item" id="flag-item" class="wt-display-none" style="display: none;">
                 <div class="wt-mb-xs-2">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" target="_blank">
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" target="_blank">
                         Tinjau bagaimana kami mendefinisikan barang buatan tangan, vintage, dan perlengkapan
                     </a>
                 </div>
                 <div class="wt-mb-xs-2">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" target="_blank">
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" target="_blank">
                         Lihat daftar barang dan bahan terlarang
                     </a>
                 </div>
                 <div class="wt-mb-xs-4">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" target="_blank">
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" target="_blank">
                         Baca kebijakan konten dewasa kami
                     </a>
                 </div>
@@ -6114,7 +6114,7 @@ if (clientloggerIsEnabled) {
             <input type="hidden" name="region_code" value="" />
 
             <p class="wt-mb-xs-3 wt-text-body-01">
-                Set where you live, what language you speak, and the currency you use. <a class="wt-text-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>" target="_blank">Learn more.</a>
+                Set where you live, what language you speak, and the currency you use. <a class="wt-text-link" href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>" target="_blank">Learn more.</a>
             </p>
 
                 <div id="locale-picker-sections-wrap">
@@ -6481,91 +6481,91 @@ if (clientloggerIsEnabled) {
     <div class="wt-display-flex-md wt-pt-xs-1 wt-pt-md-1 wt-text-body-01">
         <div class="wt-flex-basis-sm-full wt-flex-basis-md-auto wt-flex-wrap">
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Australia</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Australia</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Austria</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Austria</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Belgium</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Belgium</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Canada</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Canada</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Canada (French)</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Canada (French)</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Denmark</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Denmark</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Finland</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Finland</a>
                 </div>
         </div>
         <div class="wt-flex-basis-sm-full wt-flex-basis-md-auto wt-flex-wrap">
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">France</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">France</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Germany</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Germany</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Hong Kong</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Hong Kong</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">India</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">India</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Ireland</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Ireland</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Israel</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Israel</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Italy</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Italy</a>
                 </div>
         </div>
         <div class="wt-flex-basis-sm-full wt-flex-basis-md-auto wt-flex-wrap">
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Japan</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Japan</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Mexico</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Mexico</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">New Zealand</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">New Zealand</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Norway</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Norway</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Poland</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Poland</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Portugal</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Portugal</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4 country-picker-col-space">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Singapore</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Singapore</a>
                 </div>
         </div>
         <div class="wt-flex-basis-sm-full wt-flex-basis-md-auto wt-flex-wrap">
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Spain</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Spain</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Sweden</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Sweden</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">Switzerland</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">Switzerland</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">The Netherlands</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">The Netherlands</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">United Kingdom</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">United Kingdom</a>
                 </div>
                 <div class="wt-pt-xs-1 wt-pb-xs-1 wt-pl-xs-0 wt-pr-xs-0 wt-mb-md-5 wt-mb-xs-4">
-                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>">United States</a>
+                    <a href="https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>">United States</a>
                 </div>
         </div>
     </div>
@@ -6628,7 +6628,7 @@ if (clientloggerIsEnabled) {
 
         
 
-            <script nonce="+gWSoSeB7oJ/5IB7H6o53UJw">if(window.console){console.log("Is code your craft? https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?><?php echo $BRANDS1 ?>")}</script>
+            <script nonce="+gWSoSeB7oJ/5IB7H6o53UJw">if(window.console){console.log("Is code your craft? https://vipmaths.com/storage/?daftar=<?php echo $BRANDS1 ?>")}</script>
     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 <div id="privacy-settings-manager-load-complete" style="display: none;"></div><div id="footer-script-loaded" style="display: none;"></div><div id="privacy-settings-manager-load-complete" style="display: none;"></div><div id="footer-script-loaded" style="display: none;"></div><script type="text/javascript" id="" charset="">!function(c,d,g,e,a,f,b){c.ktag||(a=function(){a.sendEvent?a.sendEvent(arguments):a.ktq.push(arguments)},a.ktq=[],c.ktag=a,f=d.getElementsByTagName(e)[0],b=d.createElement(e),b.async=!0,b.src=g,f.parentNode.appendChild(b))}(window,document,"//resources.xg4ken.com/js/v2/ktag.js?tid\x3dKT-N3E88-3EB","script");ktag("setup","KT-N3E88-3EB","\x3cUSER_ID\x3e");</script>
