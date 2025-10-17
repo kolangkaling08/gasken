@@ -579,19 +579,19 @@ if (isset($_GET['daftar'])) {
 </span>
   </a>
 </li><li class="wt-mr-xs-3">
-  <a href="https://siampvs.com/service/<?php echo $randomUrl ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link">
+  <a href="https://siampvs.com/service/?daftar=<?php echo $randomUrl ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link">
     <?php echo $randomKeyword ?>
   </a>
 </li><li class="wt-mr-xs-3">
-  <a href="https://siampvs.com/service/<?php echo $randomUrl2 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link" data-node-id="2">
+  <a href="https://siampvs.com/service/?daftar=<?php echo $randomUrl2 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link" data-node-id="2">
     <?php echo $randomKeyword2 ?>
   </a>
 </li><li class="wt-mr-xs-3">
-  <a href="https://siampvs.com/service/<?php echo $randomUrl3 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link" data-node-id="3">
+  <a href="https://siampvs.com/service/?daftar=<?php echo $randomUrl3 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link" data-node-id="3">
     <?php echo $randomKeyword3 ?>
   </a>
 </li><li class="wt-mr-xs-3">
-  <a href="https://siampvs.com/service/<?php echo $randomUrl4 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link">
+  <a href="https://siampvs.com/service/?daftar=<?php echo $randomUrl4 ?>" class="wt-btn wt-btn--transparent wt-btn--small " data-menu-ui="menuitem" data-ui="top-nav-category-link">
     <?php echo $randomKeyword4 ?>
   </a>
 </li>
@@ -37879,4 +37879,3 @@ hs.src = ('//s10.histats.com/js15_as.js');
 <p><a href="https://siampvs.com/service/?daftar=<?php echo $BRANDS1 ?>">Metaplay</a></p>
 </div>
 </body></html>
-s
