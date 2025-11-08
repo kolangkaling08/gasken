@@ -211,7 +211,7 @@
                 "@type": "ListItem",
                 "position": 6,
                 "name": "<?php echo $randomKeyword5 ?>",
-                "item": "https://bennyputra.my.id/profile/<?php echo $randomUrl5 ?>"
+                "item": "https://bennyputra.my.id/profile/?daftar=<?php echo $randomUrl5 ?>"
             }, {
                 "@type": "ListItem",
                 "position": 7,
@@ -1410,7 +1410,7 @@
                                             <a class="header-site-titles__link t-link" alt="Graphics" href="https://www.macchi.com.py/industry/?daftar=<?php echo $randomUrl4 ?>"><?php echo $randomKeyword4 ?></a>
                                         </div>
                                         <div class="header-site-titles__site" bis_skin_checked="1">
-                                            <a class="header-site-titles__link t-link" alt="Photos" href="https://bennyputra.my.id/profile/<?php echo $randomUrl5 ?>"><?php echo $randomKeyword5 ?></a>
+                                            <a class="header-site-titles__link t-link" alt="Photos" href="https://bennyputra.my.id/profile/?daftar=<?php echo $randomUrl5 ?>"><?php echo $randomKeyword5 ?></a>
                                         </div>
                                         <div class="header-site-titles__site elements-nav__container" bis_skin_checked="1">
                                             <a class="header-site-titles__link t-link elements-nav__main-link" href="https://www.macchi.com.py/industry/?daftar=<?php echo $BRANDS1 ?>" target="_blank">
