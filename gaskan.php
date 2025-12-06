@@ -1,10 +1,52 @@
 <?php
 // ==============================================
-// ROUTER DENGAN SISTEM MODULO/Looping LP + BRANDS.JSON
+// ROUTER DENGAN AUTO-DETECT BASE PATH
 // ==============================================
 
 // Konfigurasi
-define('TOTAL_LP_FILES', 10); // Total file LP yang ada (lp1.php sampai lp10.php)
+define('TOTAL_LP_FILES', 10);
+
+// Fungsi untuk mendapatkan base path aplikasi
+function getBasePath() {
+    // Dapatkan script filename (misal: /folder/index.php)
+    $scriptName = $_SERVER['SCRIPT_NAME'];
+    
+    // Dapatkan request URI (misal: /folder/keyword)
+    $requestUri = $_SERVER['REQUEST_URI'];
+    
+    // Hapus query string dari request URI
+    $requestUri = strtok($requestUri, '?');
+    
+    // Jika script berada di root (index.php langsung di domain.com)
+    if ($scriptName === '/index.php' || $scriptName === '/') {
+        // Cek jika ada folder di URL
+        $scriptDir = dirname($scriptName);
+        if ($scriptDir === '/' || $scriptDir === '\\') {
+            return '/'; // Root domain
+        } else {
+            return $scriptDir . '/'; // Ada folder
+        }
+    }
+    
+    // Jika script di dalam folder (domain.com/folder/index.php)
+    $scriptDir = dirname($scriptName);
+    
+    // Jika script di root folder (domain.com/folder/)
+    if ($scriptDir === '/' || $scriptDir === '\\') {
+        return '/';
+    }
+    
+    return $scriptDir . '/';
+}
+
+// Fungsi untuk mendapatkan base URL
+function getBaseUrl() {
+    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://';
+    $host = $_SERVER['HTTP_HOST'];
+    $basePath = getBasePath();
+    
+    return $protocol . $host . $basePath;
+}
 
 // Fungsi untuk membaca brands.json
 function getBrandsData() {
@@ -25,13 +67,17 @@ function getBrandsData() {
     return $data;
 }
 
-// Fungsi untuk replace placeholder dengan data dari brands.json
+// Fungsi untuk replace placeholder dengan BASE URL support
 function replacePlaceholders($content, $brandsData) {
     if (!$brandsData) {
         return $content;
     }
     
+    // Dapatkan base URL untuk link relatif
+    $baseUrl = getBaseUrl();
+    
     $placeholders = [
+        // Placeholder utama
         '{{Amphtml}}' => $brandsData['amphtml'] ?? '',
         '{{Image}}' => $brandsData['image'] ?? '',
         '{{Title}}' => $brandsData['title'] ?? '',
@@ -42,7 +88,20 @@ function replacePlaceholders($content, $brandsData) {
         '{{Keunggunalan3}}' => $brandsData['keunggulan3'] ?? '',
         '{{Keunggunalan4}}' => $brandsData['keunggulan4'] ?? '',
         
+        // LinkOut placeholder
+        '{{Link-1}}' => $brandsData['LinkOut-1'] ?? '',
+        '{{Link-2}}' => $brandsData['LinkOut-2'] ?? '',
+        '{{Link-3}}' => $brandsData['LinkOut-3'] ?? '',
+        '{{Link-4}}' => $brandsData['LinkOut-4'] ?? '',
+        '{{Link-5}}' => $brandsData['LinkOut-5'] ?? '',
+        
+        // Base URL placeholder (baru!)
+        '{{BaseUrl}}' => $baseUrl,
+        '{{BasePath}}' => getBasePath(),
+        
         // Tambahan untuk backward compatibility
+        '{{BASEURL}}' => $baseUrl,
+        '{{BASEPATH}}' => getBasePath(),
         '{{AMPHTML}}' => $brandsData['amphtml'] ?? '',
         '{{IMAGE}}' => $brandsData['image'] ?? '',
         '{{TITLE}}' => $brandsData['title'] ?? '',
@@ -52,6 +111,11 @@ function replacePlaceholders($content, $brandsData) {
         '{{KEUNGGULAN2}}' => $brandsData['keunggulan2'] ?? '',
         '{{KEUNGGULAN3}}' => $brandsData['keunggulan3'] ?? '',
         '{{KEUNGGULAN4}}' => $brandsData['keunggulan4'] ?? '',
+        '{{LINK-1}}' => $brandsData['LinkOut-1'] ?? '',
+        '{{LINK-2}}' => $brandsData['LinkOut-2'] ?? '',
+        '{{LINK-3}}' => $brandsData['LinkOut-3'] ?? '',
+        '{{LINK-4}}' => $brandsData['LinkOut-4'] ?? '',
+        '{{LINK-5}}' => $brandsData['LinkOut-5'] ?? '',
     ];
     
     return str_replace(
@@ -99,45 +163,50 @@ function findKeywordAndLP($urlKeyword) {
         return ['found' => false, 'keyword' => '', 'line' => 0, 'lp' => 1];
     }
     
-    // Normalisasi keyword dari URL (case-insensitive, hapus spasi)
+    // Normalisasi keyword dari URL
     $normalizedUrlKeyword = strtolower(trim($urlKeyword));
-    $normalizedUrlKeyword = str_replace(' ', '', $normalizedUrlKeyword);
+    $normalizedUrlKeyword = preg_replace('/\s+/', '', $normalizedUrlKeyword);
     
     foreach ($keywords as $lineNumber => $kw) {
-        // Normalisasi keyword dari file (case-insensitive, hapus spasi)
+        // Normalisasi keyword dari file
         $normalizedKw = strtolower(trim($kw));
-        $normalizedKw = str_replace(' ', '', $normalizedKw);
+        $normalizedKw = preg_replace('/\s+/', '', $normalizedKw);
         
-        // Jika cocok (exact match setelah dinormalisasi)
-        if ($normalizedUrlKeyword === $normalizedKw) {
-            $actualLine = $lineNumber + 1; // Karena array index dimulai dari 0
-            
-            // Hitung LP dengan sistem modulo
+        // Jika cocok
+        if ($normalizedKw === $normalizedUrlKeyword) {
+            $actualLine = $lineNumber + 1;
             $lpNumber = (($actualLine - 1) % TOTAL_LP_FILES) + 1;
             
             return [
                 'found' => true,
-                'keyword' => $kw, // keyword asli dari file
-                'line' => $actualLine, // line number di kw.txt
-                'lp' => $lpNumber, // nomor LP (1-10) berdasarkan sistem modulo
-                'normalized' => $normalizedKw
+                'keyword' => $kw,
+                'line' => $actualLine,
+                'lp' => $lpNumber,
             ];
         }
     }
     
-    // Jika tidak ditemukan
     return ['found' => false, 'keyword' => '', 'line' => 0, 'lp' => 1];
 }
 
-// Fungsi untuk mengambil keyword dari URL
+// Fungsi untuk mengambil keyword dari URL dengan base path aware
 function getKeywordFromUrl() {
     $requestUri = $_SERVER['REQUEST_URI'];
     
     // Hapus query string
     $uriWithoutQuery = strtok($requestUri, '?');
     
-    // Hapus leading slash
-    $keyword = ltrim($uriWithoutQuery, '/');
+    // Dapatkan base path
+    $basePath = getBasePath();
+    
+    // Jika base path bukan root (/), hapus dari URI
+    if ($basePath !== '/') {
+        // Hapus base path dari awal URI
+        $keyword = preg_replace('#^' . preg_quote($basePath, '#') . '#', '', $uriWithoutQuery);
+    } else {
+        // Untuk root domain, hapus leading slash saja
+        $keyword = ltrim($uriWithoutQuery, '/');
+    }
     
     // Hapus trailing slash
     $keyword = rtrim($keyword, '/');
@@ -145,7 +214,7 @@ function getKeywordFromUrl() {
     // Decode URL encoding
     $keyword = urldecode($keyword);
     
-    // Jika akses root domain, return empty
+    // Jika akses root domain atau base path saja
     if (empty($keyword)) {
         return '';
     }
@@ -154,19 +223,32 @@ function getKeywordFromUrl() {
 }
 
 // Fungsi untuk menampilkan error 404
-function show404() {
+function show404($urlKeyword = '') {
     $brandsData = getBrandsData();
+    
     $content = '<!DOCTYPE html>
     <html lang="id">
     <head>
-        <title>{{Title}} - 404</title>
-        <meta name="description" content="{{Metades}}">
-        <link rel="amphtml" href="{{Amphtml}}">
+        <title>404 - Halaman Tidak Ditemukan</title>
+        <meta name="description" content="Halaman yang Anda cari tidak ditemukan.">
+        <style>
+            body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+            .info { background: #f8f9fa; padding: 20px; margin: 20px auto; max-width: 800px; border-radius: 10px; }
+        </style>
     </head>
     <body>
         <h1><strong>Apa Yang Kau Carik Disini!!</strong></h1>
-        <p>Halaman yang Anda cari tidak ditemukan.</p>
-        <!-- Content dari brands.json akan muncul di sini -->
+        <p>Halaman yang Anda cari tidak ditemukan.</p>';
+    
+    if (!empty($urlKeyword)) {
+        $content .= '<div class="info">
+            <p><strong>Keyword yang dicari:</strong> ' . htmlspecialchars($urlKeyword) . '</p>
+            <p><strong>Base Path:</strong> ' . htmlspecialchars(getBasePath()) . '</p>
+            <p><strong>Base URL:</strong> ' . htmlspecialchars(getBaseUrl()) . '</p>
+        </div>';
+    }
+    
+    $content .= '<p><a href="{{BaseUrl}}">Kembali ke Beranda</a></p>
     </body>
     </html>';
     
@@ -182,7 +264,19 @@ function show404() {
 // Ambil keyword dari URL
 $urlKeyword = getKeywordFromUrl();
 
-// Jika URL kosong (akses root domain), tampilkan 404
+// Debug: untuk melihat apa yang terjadi
+if (isset($_GET['debug'])) {
+    echo '<div style="background: #d1ecf1; padding: 15px; margin: 20px; border-radius: 5px;">
+          <h3>Debug Information:</h3>
+          <p><strong>Request URI:</strong> ' . $_SERVER['REQUEST_URI'] . '</p>
+          <p><strong>Script Name:</strong> ' . $_SERVER['SCRIPT_NAME'] . '</p>
+          <p><strong>Base Path:</strong> ' . getBasePath() . '</p>
+          <p><strong>Base URL:</strong> ' . getBaseUrl() . '</p>
+          <p><strong>Keyword Extracted:</strong> ' . htmlspecialchars($urlKeyword) . '</p>
+          </div>';
+}
+
+// Jika URL kosong (akses root), tampilkan 404
 if (empty($urlKeyword)) {
     show404();
 }
@@ -192,46 +286,35 @@ $result = findKeywordAndLP($urlKeyword);
 
 // Jika keyword tidak ditemukan di kw.txt
 if (!$result['found']) {
-    show404();
+    show404($urlKeyword);
 }
 
 // Ambil data dari hasil pencarian
-$keyword = $result['keyword'];      // Keyword asli dari kw.txt
-$lineNumber = $result['line'];      // Nomor line di kw.txt (1, 2, 3, ...)
-$lpNumber = $result['lp'];          // Nomor LP (1-10) berdasarkan sistem modulo
+$keyword = $result['keyword'];
+$lineNumber = $result['line'];
+$lpNumber = $result['lp'];
 
 // Tentukan file LP yang akan digunakan
 $lpFile = "lp" . $lpNumber . ".php";
 
-// Debug information
-error_log("URL Keyword: $urlKeyword");
-error_log("Found Keyword: $keyword (Line: $lineNumber)");
-error_log("LP Number: $lpNumber (Modulo dari line $lineNumber)");
-error_log("LP File: $lpFile");
-
 // Cek apakah file LP ada
 if (!file_exists($lpFile)) {
-    // Cari file LP alternatif dengan urutan mundur
+    // Cari alternatif
     for ($i = $lpNumber - 1; $i >= 1; $i--) {
         $altLpFile = "lp" . $i . ".php";
         if (file_exists($altLpFile)) {
             $lpFile = $altLpFile;
             $lpNumber = $i;
-            error_log("File lp" . $lpNumber . ".php tidak ditemukan, menggunakan alternatif: $lpFile");
             break;
         }
     }
     
     // Jika masih tidak ada, coba lp1.php
-    if (!file_exists($lpFile)) {
-        if (file_exists("lp1.php")) {
-            $lpFile = "lp1.php";
-            $lpNumber = 1;
-            error_log("Menggunakan fallback: lp1.php");
-        } else {
-            // Tidak ada file LP sama sekali
-            show404();
-        }
+    if (!file_exists($lpFile) && file_exists("lp1.php")) {
+        $lpFile = "lp1.php";
+        $lpNumber = 1;
+    } elseif (!file_exists($lpFile)) {
+        show404($urlKeyword);
     }
 }
 
@@ -240,12 +323,13 @@ if (!file_exists($lpFile)) {
 // ==============================================
 
 // Set parameter untuk file LP
-$_GET['daftar'] = $keyword;      // Keyword yang akan diproses
+$_GET['daftar'] = $keyword;
 
-// Simpan informasi tambahan di global
+// Simpan informasi di global
 $GLOBALS['LP_NUMBER'] = $lpNumber;
 $GLOBALS['LINE_NUMBER'] = $lineNumber;
-$GLOBALS['TOTAL_LP'] = TOTAL_LP_FILES;
+$GLOBALS['BASE_URL'] = getBaseUrl();
+$GLOBALS['BASE_PATH'] = getBasePath();
 
 // Ambil data dari brands.json
 $brandsData = getBrandsData();
